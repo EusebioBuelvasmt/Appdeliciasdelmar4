@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context="apps.DeliciasdelMar3.DetalleRegistroActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Imagen del usuario de perfil-->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileIv"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/logo_delicias_del_mar"
+            app:civ_border_color="@color/black"
+            app:civ_border_overlay="true"
+            app:civ_border_width="1dp"
+            />
+
+        <!-- tabla de otros datos -->
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="2">
+
+
+
+            <TableRow>
+
+
+                <TextView
+                    android:id="@+id/nameTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"
+                    android:text="Nombre del Usuario"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"/>
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/priceTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/precio_hint"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"/>
+
+            </TableRow>
+
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/bioTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="3"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:text="La informacion bio del usuario"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    tools:ignore="RtlCompat" />
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

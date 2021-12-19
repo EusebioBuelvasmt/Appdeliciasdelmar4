@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Delicias del Mar3</string>
+
+    <string name="agregar_producto">Agregar Productos</string>
+    <string name="producto_label_text">Producto :</string>
+    <string name="producto_hint">Ingrese nombre Producto</string>
+    <string name="precio_label_text">Precio :</string>
+    <string name="precio_hint">Ingrese Precio</string>
+    <string name="enter_descripcion_hint">Ingrese descripcion del Producto</string>
+    <string name="descripcion_label_text">Descripcion :</string>
+    <string name="id_hint">Ingrese Id</string>
+
+</resources>
